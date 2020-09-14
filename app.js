@@ -9,7 +9,7 @@ function getRandomNumber(min, max) {
     return random;
 }
 
-var seattle = {
+var Seattle = {
     location: 'Seattle',
     max: 65,
     min: 23,
@@ -25,22 +25,22 @@ var seattle = {
     render: function () {
         var container = document.getElementById('main');
         var section = document.createElement('section');
-        container.appendChild('section');
+        container.appendChild(section);
         var head = document.createElement('h2');
-        section.appendChild('head');
+        section.appendChild(head);
         head.textContent = this.location;
         var unOrderedList = document.createElement('ul');
-        section.appendChild('unOrderedList');
+        section.appendChild(unOrderedList);
         for (var i = 0; i < workHours.length; i++) {
             this.purchasecCookies();
-            this.getRandomNumber();
+            getRandomNumber(this.min, this.max);
             this.purchasecCookies();
             var listItem = document.createElement('li');
-            unOrderedList.appendChild('listItem');
+            unOrderedList.appendChild(listItem);
             listItem.textContent = this.workHours[i] + ' ' + this.purchasecCookies(); + ' ' + 'cookies';
         }
     }
 }
-seattle.purchasecCookies();
-seattle.render();
-console.table(seattle);
+Seattle.purchasecCookies();
+Seattle.render();
+console.table(Seattle);

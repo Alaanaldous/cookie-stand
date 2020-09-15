@@ -16,6 +16,7 @@ var Seattle = {
   // cookies_purchased_Hour:generateRandomNumber(2,200) ,
   random_customers_per_hour1: [],
   cookies_purchased_Hour: [],
+  total:0, 
   getRandomCustomerPerHours: function () {
 
     for (var i = 0; i < OpenHour.length; i++) {
@@ -29,10 +30,14 @@ var Seattle = {
 
     for (var i = 0; i < OpenHour.length; i++) {
       this.cookies_purchased_Hour[i] = Math.floor(this.random_customers_per_hour1[i] * this.average_cookies_per_customer);
+      //this.total = this.total + cookies_purchased_Hour[i];
+      
     }
-
+    //console.log(this.cookies_purchased_Hour[i]);
+    
+    
   },
-
+    
   render: function () {
 
     var Parent_main = document.getElementById('main');
@@ -53,7 +58,6 @@ var Seattle = {
   }
 
 };
-
 
 
 ///////////////////////////////////////        [Tokyo]      /////////////////////////////////////////////////

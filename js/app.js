@@ -372,3 +372,5 @@ function generateRandomNumber(min, max) {
   return random;
 
 }
+
+//Alaa :)

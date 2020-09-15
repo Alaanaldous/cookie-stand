@@ -12,7 +12,7 @@ var Seattle = {
   Max: 65,
   Min: 23,
   average_cookies_per_customer: 6.3,
-  total : 0;
+  total : 0,
   // random_customers_per_hour: generateRandomNumber(23,65),
   // cookies_purchased_Hour:generateRandomNumber(2,200) ,
   random_customers_per_hour1: [],

@@ -12,6 +12,7 @@ var Seattle = {
   Max: 65,
   Min: 23,
   average_cookies_per_customer: 6.3,
+  total : 0;
   // random_customers_per_hour: generateRandomNumber(23,65),
   // cookies_purchased_Hour:generateRandomNumber(2,200) ,
   random_customers_per_hour1: [],
@@ -29,6 +30,7 @@ var Seattle = {
 
     for (var i = 0; i < OpenHour.length; i++) {
       this.cookies_purchased_Hour[i] = Math.floor(this.random_customers_per_hour1[i] * this.average_cookies_per_customer);
+      this.total = this.total + cookies_purchased_Hour[i];
     }
 
   },
@@ -50,6 +52,9 @@ var Seattle = {
 
       unorderlistDeatilsHour.appendChild(ListItemLocation);
     }
+    ListItemLocation = document.createElement('li');
+    unorderlistDeatilsHour.appendChild(ListItemLocation);
+    ListItemLocation.textContent= `Total${this.total} cookies`
   }
 
 };

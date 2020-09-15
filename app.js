@@ -154,7 +154,7 @@ var Seattle = {
     
   render: function () {
 
-    var Parent_main = document.getElementById('main');
+    var Parent_main = document.getElementById('sales');
 
     var LocatoinName = document.createElement('h2');
     LocatoinName.textContent = this.name;
@@ -218,7 +218,7 @@ var Tokyo = {
 
   render: function () {
 
-    var Parent_main = document.getElementById('main');
+    var Parent_main = document.getElementById('sales');
 
     var LocatoinName = document.createElement('h2');
     LocatoinName.textContent = this.name;
@@ -283,7 +283,7 @@ var Dubai = {
 
   render: function () {
 
-    var Parent_main = document.getElementById('main');
+    var Parent_main = document.getElementById('sales');
 
     var LocatoinName = document.createElement('h2');
     LocatoinName.textContent = this.name;
@@ -348,7 +348,7 @@ var Paris = {
 
   render: function () {
 
-    var Parent_main = document.getElementById('main');
+    var Parent_main = document.getElementById('sales');
 
     var LocatoinName = document.createElement('h2');
     LocatoinName.textContent = this.name;
@@ -415,7 +415,7 @@ var Lima = {
 
   render: function () {
 
-    var Parent_main = document.getElementById('main');
+    var Parent_main = document.getElementById('sales');
 
     var LocatoinName = document.createElement('h2');
     LocatoinName.textContent = this.name;

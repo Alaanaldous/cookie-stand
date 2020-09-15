@@ -1,0 +1,18 @@
+.toplist{
+    display: inline;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#nav, #footer{
+    background-color: bisque;
+    padding: 10PX;
+    margin: 10PX;
+}
+
+body{
+    background-image: url("/imgs/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+

@@ -1,5 +1,16 @@
 'use strict';
+//lab-09
+var form =document.getElementById('addinNewLocation');
+form.addEventListener('submit' , function(event){
+ event.preventDefault();
 
+ var name = event.target.name.value;
+ var min = event.target.min.value;
+ var max = event.target.max.value;
+ var average1 = event.target.average1.value;
+ localStorage.renderContent();
+ localStorage.renderLastRow();
+});
 
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12am', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var store = [];
@@ -104,6 +115,8 @@ for (var i = 0; i < store.length; i++) {
 }
 store[0].totals();
 store[0].totalFun();
+
+
 //locations
 var OpenHour = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
 

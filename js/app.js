@@ -1,5 +1,7 @@
 'use strict';
 
+////////////////////////////////////////lab-06//////////////////////////////////////////////////////
+
 var OpenHour = ['6 am', '7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm', '6 pm', '7 pm'];
 
 var Locations =[Seattle,Tokyo,Dubai,Paris,Lima];
@@ -30,13 +32,13 @@ var Seattle = {
   getcookies_purchased_Hour: function () {
 
     for (var i = 0; i < OpenHour.length; i++) {
-<<<<<<< HEAD
+
       this.cookies_purchased_Hour[i] = Math.floor(this.random_customers_per_hour1[i] * this.average_cookies_per_customer);
       this.total = this.total + cookies_purchased_Hour[i];
     }
-=======
+
       this.cookies_purchased_Hour[i] =Math.floor (this.random_customers_per_hour1[i] * this.average_cookies_per_customer);
->>>>>>> f8b8413afef044f7bb16e15769296b2601eb98a5
+
 
       //this.total = this.total + cookies_purchased_Hour[i];
       
@@ -73,11 +75,11 @@ var Seattle = {
     }
     ListItemLocation = document.createElement('li');
     unorderlistDeatilsHour.appendChild(ListItemLocation);
-<<<<<<< HEAD
+
     ListItemLocation.textContent= `Total${this.total} cookies`
-=======
+
     ListItemLocation.textContent = 'Total ' + this.total + ' cookies';
->>>>>>> f8b8413afef044f7bb16e15769296b2601eb98a5
+
   }
 
 };
